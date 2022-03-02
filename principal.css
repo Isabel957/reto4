@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes rotar {
+    0% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(-180deg);
+    }
+}
+body {
+    background: #8cdb74;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    margin-top: 150px;
+    text-align: center;
+}
+.container img{
+    width: 150px;
+    animation-name: rotar;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.container input[type=text] {
+    font-family: "Poppins", sans-serif;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: #BADDF9;
+    border: 1px solid transparent;
+    outline: none;
+    color: #1565BF;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.container input[type=text]:hover {
+    border: 1px solid skyblue;
+}
+.container input[type=submit]{
+    background-color: orange;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin: 10px;
+    border: 2px solid rgb(139, 119, 4);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.container input[type=submit]:hover {
+    border: 2px outset rgb(139, 119, 4);
+}
